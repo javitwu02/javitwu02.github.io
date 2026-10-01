@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Javit Wu's accounting and finance portfolio." />
+  <title>Javit Wu | Portfolio</title>
+  <style>
+    :root { --ink:#172033; --muted:#5d6678; --accent:#1d4ed8; --soft:#f4f7fb; --line:#e3e8f0; --white:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:var(--white); line-height:1.65; }
+    nav { position:sticky; top:0; z-index:10; background:rgba(255,255,255,.94); border-bottom:1px solid var(--line); backdrop-filter:blur(10px); }
+    .nav-inner { max-width:1000px; margin:auto; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+    .brand { font-weight:800; letter-spacing:-.02em; }
+    .nav-links { display:flex; gap:22px; flex-wrap:wrap; }
+    a { color:var(--accent); text-decoration:none; }
+    .nav-links a { color:var(--muted); font-weight:600; font-size:.94rem; }
+    .nav-links a:hover, a:hover { text-decoration:underline; }
+    main { max-width:1000px; margin:auto; padding:0 24px 72px; }
+    header { padding:96px 0 72px; display:grid; grid-template-columns:1.5fr .7fr; gap:48px; align-items:center; }
+    .eyebrow { color:var(--accent); font-weight:800; text-transform:uppercase; letter-spacing:.12em; font-size:.78rem; }
+    h1 { margin:8px 0 12px; font-size:clamp(2.8rem,8vw,5.4rem); line-height:.98; letter-spacing:-.055em; }
+    .lead { font-size:1.18rem; color:var(--muted); max-width:720px; }
+    .hero-card { background:var(--soft); border:1px solid var(--line); border-radius:24px; padding:28px; }
+    .hero-card strong { display:block; margin-bottom:7px; }
+    .hero-card p { margin:0 0 18px; color:var(--muted); }
+    .hero-card p:last-child { margin-bottom:0; }
+    section { padding:64px 0; border-top:1px solid var(--line); }
+    h2 { font-size:2rem; letter-spacing:-.035em; margin:0 0 12px; }
+    .section-intro { color:var(--muted); margin:0 0 30px; max-width:700px; }
+    .skills { display:flex; flex-wrap:wrap; gap:10px; }
+    .skill { padding:9px 14px; border:1px solid var(--line); background:var(--soft); border-radius:999px; font-weight:650; font-size:.93rem; }
+    .projects { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .project { border:1px solid var(--line); border-radius:18px; padding:24px; display:flex; flex-direction:column; min-height:280px; }
+    .project h3 { margin:0 0 10px; font-size:1.18rem; }
+    .project p { color:var(--muted); margin:0 0 20px; }
+    .project .tag { color:var(--accent); font-size:.78rem; font-weight:800; text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; }
+    .project a { margin-top:auto; font-weight:750; }
+    .note { font-size:.88rem; color:var(--muted); margin-top:18px; }
+    footer { border-top:1px solid var(--line); padding:30px 0 0; color:var(--muted); font-size:.9rem; }
+    @media (max-width:760px) { header { grid-template-columns:1fr; padding-top:70px; } .projects { grid-template-columns:1fr; } .nav-inner { align-items:flex-start; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <div class="brand">Javit Wu</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header id="about">
+      <div>
+        <div class="eyebrow">Accounting • Finance • Business</div>
+        <h1>Javit Wu</h1>
+        <p class="lead"><strong>Sophomore at Rutgers Business School pursuing interests in accounting and finance, with a strong interest in audit, tax, and financial analysis.</strong></p>
+      </div>
+      <aside class="hero-card">
+        <strong>Education</strong>
+        <p>Rutgers Business School<br />Class of 2029</p>
+        <strong>Areas of Interest</strong>
+        <p>Audit • Tax • Internal Audit • Financial Analysis</p>
+      </aside>
+    </header>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p class="section-intro">Technical and professional skills relevant to accounting, finance, and business roles.</p>
+      <div class="skills">
+        <span class="skill">Microsoft Excel</span>
+        <span class="skill">Financial Accounting</span>
+        <span class="skill">Managerial Accounting</span>
+        <span class="skill">Financial Analysis</span>
+        <span class="skill">Data Analysis</span>
+        <span class="skill">Risk Assessment</span>
+        <span class="skill">Internal Controls</span>
+        <span class="skill">Research &amp; Analysis</span>
+        <span class="skill">Problem Solving</span>
+        <span class="skill">Communication</span>
+        <span class="skill">Teamwork</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p class="section-intro">Selected academic and professional-development work demonstrating analytical, accounting, finance, and business skills.</p>
+      <div class="projects">
+        <article class="project">
+          <div class="tag">Internal Audit</div>
+          <h3>Goldman Sachs Internal Audit Job Simulation</h3>
+          <p>Completed a Forage virtual simulation focused on identifying and evaluating business risks. Analyzed fixed-income trading, corporate credit risk, and anti-money-laundering controls and developed recommendations for identified control weaknesses.</p>
+          <a href="#" aria-label="Goldman Sachs project link placeholder">Add certificate link →</a>
+        </article>
+
+        <article class="project">
+          <div class="tag">Finance</div>
+          <h3>Stock Market Investment Portfolio</h3>
+          <p>Managed a virtual investment portfolio by researching equities, analyzing market trends, and making investment decisions. Evaluated risk, return, and diversification while examining how economic events affected stock performance.</p>
+          <a href="#" aria-label="Investment portfolio project link placeholder">Add project link →</a>
+        </article>
+
+        <article class="project">
+          <div class="tag">Marketing Analysis</div>
+          <h3>Collectible Asset Portfolio Analysis</h3>
+          <p>Tracked and analyzed a portfolio of collectible assets, monitoring price trends and market fluctuations over time. Evaluated factors influencing price movements, including supply, demand, rarity, and market sentiment, while maintaining records of purchases, sales, and valuation changes to assess portfolio performance.</p>
+          <a href="#" aria-label="Collectible asset portfolio project link placeholder">Add project link →</a>
+        </article>
+      </div>
+      <p class="note"><strong>Before submitting:</strong> replace each “Add … link” placeholder with a real project, certificate, or reference URL so your portfolio has no broken links.</p>
+    </section>
+
+    <footer>© 2026 Javit Wu • Rutgers Business School</footer>
+  </main>
+</body>
+</html>
